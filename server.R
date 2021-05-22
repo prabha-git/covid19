@@ -26,8 +26,11 @@ server <- function(input, output, session) {
         facet_wrap(~state) +
         scale_y_continuous(labels = unit_format(unit="k",scale=1e-3))+
         theme_bw()+
-        theme(axis.title.x=element_blank(),axis.title.y = element_blank())
+        theme(axis.title.x = element_blank(),
+              axis.title.y = element_blank(),
+              panel.spacing.y = unit(1,"lines")
+              )
     
-  },width = "auto",height = 800)
+  },width = "auto",height = 1000)
   dbDisconnect(bq_conn)
 }
