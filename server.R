@@ -6,7 +6,7 @@ server <- function(input, output, session) {
   projectid = 'covid19-india-314022'
   datasetid<-'covid19_india'
   
-  bq_auth(path = "covid19-india-314022-4b7fb74fdf79.json")
+  bq_auth(path = "covid19-india-314022-7fe8b8ce467e.json")
   
   bq_conn <-  dbConnect(bigquery(), 
                         project = projectid,
