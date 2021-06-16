@@ -7,6 +7,8 @@ ui <- fluidPage(
   # App title
   titlePanel("Covid19 Active Cases Trend in India"),
   
+  tags$p("Link to the ",tags$a(href="https://github.com/prabha-git/covid19","Source Code")),
+  
   div(style = "display:inline-block;vertical-align:top;float:right;",
       fluidRow(column(
         12,
