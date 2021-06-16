@@ -2,6 +2,7 @@
 FROM rocker/shiny-verse:latest
 
 RUN R -e "install.packages('bigrquery')"
+RUN R -e "install.packages('shinycssloaders')"
 
 COPY . ./app
 
